@@ -1,17 +1,20 @@
-/** Media Queries **/
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
 .navbar-brand span {
-  font-family: "Indie Flower", cursive;
+  font-family: 'Indie Flower', cursive;
   font-size: 3rem;
 }
 
 .navbar-brand {
   margin-right: 0;
   padding: 0;
-}
-@media (min-width: 1024px) {
-  .navbar-brand .navbar-brand {
-    margin-right: 0;
-    padding: 0 1em;
+
+  @include m.desktop{
+    .navbar-brand {
+      margin-right: 0;
+      padding: 0 1em;
+    }
   }
 }
 
@@ -20,13 +23,14 @@
 }
 
 .navbar .navbar-nav .nav-link {
-  color: #FFFFFF;
+  color: v.$white;
   font-size: 1.5em;
-  padding: 0.5em 1em;
+  padding: .5em 1em;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #FB9A09;
+  //color: rgba(222, 222, 222, 0.99);
+  color: v.$secondColor
 }
 
 @media screen and (min-width: 992px) {
@@ -34,6 +38,7 @@
     width: 70px;
   }
 }
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 30 30' %3e%3cpath stroke= 'white' stroke-linecap= 'round' stroke-miterlimit= '10' stroke-width= '3' d= 'M4 7h22M4 15h22M4 23h22' /%3e%3c/svg%3e");
 }
@@ -46,7 +51,6 @@
   box-shadow: none;
 }
 
-.bg-navbar {
-  background-color: #1B8B9F;
+.bg-navbar{
+  background-color: v.$primaryColor;
 }
-/*# sourceMappingURL=app.css.map */
