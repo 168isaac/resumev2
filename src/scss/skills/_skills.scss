@@ -1,0 +1,49 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.skills {
+
+  &_h2 {
+    font-size: 2.5rem;
+  }
+
+  &_li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1rem 0 1rem 0;
+
+    font-size: 1.2rem;
+  }
+
+  &_card {
+    //padding: 2rem 3rem;
+    padding: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: 90%;
+  }
+
+  &_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &_professional, &_personal {
+    height: 100%;
+    margin:2rem 0;
+  }
+
+  &_bars {
+    margin-bottom: 2rem;
+  }
+
+  &_color{
+    background-color: v.$secondColor;
+  }
+
+  &_barname {
+    text-align: start;
+  }
+}

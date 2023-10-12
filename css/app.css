@@ -1,3 +1,33 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0 0 5rem 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  margin: 10rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /** Media Queries **/
 .navbar-brand span {
   font-family: "Indie Flower", cursive;
@@ -48,5 +78,120 @@
 
 .bg-navbar {
   background-color: #1B8B9F;
+}
+
+.about_h3, .about_h5 {
+  color: #6C757D;
+}
+.about_icon {
+  color: #132D47;
+}
+.about_icon:hover {
+  color: #FB9A09;
+}
+.about_social {
+  margin: 1rem 0 3rem 0;
+}
+.about_ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.about_li {
+  margin: 0 1.2rem;
+}
+.about_a {
+  font-size: 2rem;
+}
+.about_description {
+  text-align: justify;
+}
+
+.skills_h2 {
+  font-size: 2.5rem;
+}
+.skills_li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 1rem 0;
+  font-size: 1.2rem;
+}
+.skills_card {
+  padding: 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 90%;
+}
+.skills_card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.skills_professional, .skills_personal {
+  height: 100%;
+  margin: 2rem 0;
+}
+.skills_bars {
+  margin-bottom: 2rem;
+}
+.skills_color {
+  background-color: #FB9A09;
+}
+.skills_barname {
+  text-align: start;
+}
+
+.projects_h2 {
+  font-size: 2.5rem;
+}
+.projects_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.5rem;
+}
+.projects_title {
+  font-size: 1.5rem;
+}
+.projects_description {
+  margin: 0.5rem 0 0.5rem 0;
+  text-align: justify;
+}
+.projects_icon {
+  color: #132D47;
+}
+.projects_icon:hover {
+  color: #FB9A09;
+}
+@media (min-width: 1024px) {
+  .projects_content {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contacts {
+  background-color: #1B8B9F;
+}
+.contacts_h2 {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  margin: 3rem 0 3rem 0;
+}
+.contacts_detail {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.contacts_social, .contacts .bi {
+  margin: 3rem 0;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.section--footer {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=app.css.map */

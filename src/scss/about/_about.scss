@@ -1,0 +1,40 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.about{
+
+  &_h3, &_h5{
+    color: v.$complementColor;
+  }
+
+  &_icon{
+    color: v.$socialColor;
+  }
+
+  &_icon:hover{
+    color: v.$secondColor;
+  }
+
+  &_social{
+    margin: 1rem 0 3rem 0;
+  }
+
+  &_ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_li{
+    margin: 0 1.2rem;
+  }
+
+  &_a{
+    font-size: 2rem;
+  }
+
+  &_description{
+    text-align: justify;
+  }
+}
