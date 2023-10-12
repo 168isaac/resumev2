@@ -1,5 +1,5 @@
 const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('navbarTogglerDemo03')
+const menuToggle = document.getElementById('navbarToggler')
 const bsCollapse = new bootstrap.Collapse(menuToggle, {
     toggle: false
 })
