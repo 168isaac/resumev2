@@ -198,4 +198,49 @@ a {
 .section--footer {
   margin-bottom: 0;
 }
+
+.certificates_h2 {
+  font-size: 2.5rem;
+}
+.certificates_card {
+  margin-bottom: 3rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+.certificates_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media (min-width: 1024px) {
+  .certificates_card {
+    margin-bottom: 0.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .certificates_content {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.certificates_footer {
+  padding: 0;
+}
+.certificates_link {
+  background-color: #FB9A09;
+  padding: 0.5rem;
+  display: block;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+@media (min-width: 1024px) {
+  .certificates_link {
+    padding: 1rem;
+    display: block;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+  }
+}
+.certificates_link:hover {
+  opacity: 0.9;
+}
 /*# sourceMappingURL=app.css.map */
